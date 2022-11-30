@@ -12,9 +12,10 @@ function getTime() {
 
   secondsHand.style.transform = "rotate(" + seconds * timeInterval + "deg)";
   minutesHand.style.transform = "rotate(" + minutes * timeInterval + "deg)";
+  //hoursHand.style.transform = "rotate(" + hours * 30 + minutes / 2 + "deg)"; stepeni koji se dodaju da se 
+  //kazaljka koja pokazuje casove krece sporije
   hoursHand.style.transform = "rotate(" + hours * 30 + "deg)";
   stopWatch.innerHTML = `${hours}:${minutes}:${seconds} `;
-  console.log(time);
 }
 
 setInterval(getTime, 1000);
