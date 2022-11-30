@@ -1,0 +1,59 @@
+@use "../body/functions" as *;
+
+// h1 {
+//   font-size: rem(100);  // how to use functions
+// }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d9e1f4;
+}
+.clock {
+  width: rem(500);
+  height: rem(500);
+  border-radius: rem(250);
+  border: 5px solid #7087c7;
+  background-color: #7bdac0;
+  position: absolute;
+}
+#seconds {
+  width: rem(2);
+  background-color: #32594e;
+  height: rem(240);
+  position: absolute;
+  right: rem(249);
+  bottom: rem(246);
+  transform-origin: 0 100%;
+}
+#minutes {
+  width: rem(2);
+  background-color: #564982;
+  height: rem(225);
+  position: absolute;
+  right: rem(249);
+  bottom: rem(246);
+  transform-origin: 0 100%;
+}
+#hours {
+  width: rem(4);
+  background-color: #425177;
+  height: rem(200);
+  position: absolute;
+  right: rem(249);
+  bottom: rem(246);
+  transform-origin: 0 100%;
+}
+#center {
+  position: absolute;
+  width: rem(25);
+  height: rem(25);
+  border-radius: 10px;
+  //right: rem(240);
+  //bottom: rem(235);
+  right: 240px;
+  bottom: 235px;
+  background-color: #564982;
+}
